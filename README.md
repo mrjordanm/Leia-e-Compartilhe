@@ -1,15 +1,3 @@
-## Acesso para avaliação
-
-O projeto possui três perfis de demonstração previamente cadastrados no banco de dados:
-
-- Aluno
-- Educador
-- Administrador
-
-As credenciais de acesso (e-mails e senhas) dos três perfis estão disponíveis no arquivo `credenciais.txt`, enviado separadamente junto à entrega acadêmica.
-
-O sistema deve ser executado localmente, seguindo as instruções de configuração descritas neste README.
-
 # Leia & Compartilhe
 
 Plataforma web de inclusão literária e sustentabilidade, desenvolvida como projeto da Atividade Extensionista III. O sistema busca incentivar a leitura, facilitar o compartilhamento de livros e aproximar instituições e educadores da comunidade escolar.
@@ -87,3 +75,20 @@ Acesse o endereço local informado pelo Vite, normalmente:
 
 Desenvolvido para a Atividade Extensionista III, com foco em inclusão literária, incentivo à leitura e sustentabilidade por meio do compartilhamento de livros.
 
+## Acesso para avaliação
+
+Caso queira testar, o projeto disponibiliza três contas de demonstração, cada uma com um perfil e permissões específicas:
+
+- **Administrador:** acesso às funcionalidades administrativas do sistema.
+- **Educador:** acesso ao gerenciamento de empréstimos e às funcionalidades destinadas aos educadores.
+- **Aluno:** acesso ao catálogo de livros e à solicitação de empréstimos.
+
+**Observações sobre o cadastro:**
+
+- Por padrão, novos usuários cadastrados recebem o perfil de Aluno.
+- O cadastro de Educadores é realizado por um Administrador.
+- Para facilitar a avaliação, já está disponível uma conta de demonstração para o perfil Educador.
+
+**[Clique aqui para consultar as credenciais de demonstração](CREDENCIAIS_DEMO.md).**
+
+As contas foram criadas exclusivamente para testes e avaliação acadêmica do protótipo, utilizando dados fictícios.
