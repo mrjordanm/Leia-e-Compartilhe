@@ -41,13 +41,21 @@ async function decidirEmprestimo(id, aprovado) {
     return requisitarEmprestimos(`/${id}/decidir`, 'PUT', { aprovado })
 }
 
+
 async function registrarRetirada(id) {
-    return requisitarEmprestimos(`/${id}/retirada`, 'PUT')
+    return requisitarEmprestimos(`/${id}/retirada`, 'PUT', {
+        confirmarRetirada: true
+    })
 }
 
+
+
 async function registrarDevolucao(id) {
-    return requisitarEmprestimos(`/${id}/devolucao`, 'PUT')
+    return requisitarEmprestimos(`/${id}/devolucao`, 'PUT', {
+        confirmarDevolucao: true
+    })
 }
+
 
 export {
     listarTodosEmprestimos,
