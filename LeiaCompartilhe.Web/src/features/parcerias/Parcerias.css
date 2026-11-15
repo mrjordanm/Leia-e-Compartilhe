@@ -1,0 +1,235 @@
+
+.gestao-parcerias {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.parcerias-introducao {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 25px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 14px;
+    background: white;
+}
+
+.parcerias-introducao-icone {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    background: #e8f1fa;
+    color: var(--cor-primaria);
+}
+
+.parcerias-introducao h2 {
+    margin: 0 0 6px;
+    color: var(--cor-primaria);
+    font-size: 21px;
+}
+
+.parcerias-introducao p {
+    margin: 0;
+    color: var(--cor-texto-secundario);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.parcerias-formulario-container {
+    padding: 28px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(36, 50, 71, 0.04);
+}
+
+.parcerias-formulario-titulo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--cor-secundaria);
+    text-align: left;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+    .parcerias-formulario-titulo:hover h3 {
+        color: var(--cor-secundaria);
+    }
+
+    .parcerias-formulario-titulo > svg {
+        flex-shrink: 0;
+        transition: transform 0.2s;
+    }
+
+    .parcerias-formulario-titulo h3 {
+        margin: 0 0 6px;
+        color: var(--cor-texto);
+        font-size: 18px;
+    }
+
+    .parcerias-formulario-titulo p {
+        margin: 0;
+        color: var(--cor-texto-secundario);
+        font-size: 13px;
+    }
+
+.parcerias-formulario-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 650px;
+}
+
+.campo-parceria {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+    .campo-parceria label {
+        color: var(--cor-texto);
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .campo-parceria input,
+    .campo-parceria textarea {
+        width: 100%;
+        min-height: 44px;
+        padding: 11px 13px;
+        border: 1px solid var(--cor-borda);
+        border-radius: 8px;
+        outline: none;
+        background: #fff;
+        color: var(--cor-texto);
+        font-family: inherit;
+        font-size: 13px;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .campo-parceria textarea {
+        resize: vertical;
+    }
+
+        .campo-parceria input:focus,
+        .campo-parceria textarea:focus {
+            border-color: var(--cor-secundaria);
+            box-shadow: 0 0 0 3px rgba(40, 107, 158, 0.1);
+        }
+
+        .campo-parceria input::placeholder,
+        .campo-parceria textarea::placeholder {
+            color: #a0acb9;
+        }
+
+.botao-cadastrar-parceria {
+    min-height: 45px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: var(--cor-primaria);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+    .botao-cadastrar-parceria:hover {
+        background: var(--cor-secundaria);
+    }
+
+    .botao-cadastrar-parceria:disabled {
+        cursor: not-allowed;
+        opacity: 0.65;
+    }
+
+.mensagem-parceria {
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+    .mensagem-parceria.sucesso {
+        border: 1px solid #c6e4d3;
+        background: #edf8f1;
+        color: #286b49;
+    }
+
+    .mensagem-parceria.erro {
+        border: 1px solid #f0cccc;
+        background: #fff0f0;
+        color: #a33c3c;
+    }
+
+.parcerias-listagem {
+    padding: 28px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 14px;
+    background: white;
+}
+
+    .parcerias-listagem h3 {
+        margin: 0 0 20px;
+        color: var(--cor-texto);
+        font-size: 18px;
+    }
+
+.parcerias-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.parceria-card {
+    padding: 20px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 10px;
+    background: #fff;
+}
+
+    .parceria-card h4 {
+        margin: 0 0 12px;
+        color: var(--cor-primaria);
+        font-size: 16px;
+    }
+
+    .parceria-card p {
+        margin: 8px 0;
+        color: var(--cor-texto-secundario);
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+@media (max-width: 600px) {
+    .parcerias-introducao {
+        align-items: flex-start;
+        padding: 19px;
+    }
+
+    .parcerias-formulario-container,
+    .parcerias-listagem {
+        padding: 20px;
+    }
+
+    .parcerias-introducao h2 {
+        font-size: 18px;
+    }
+}
+.parcerias-formulario-titulo .menu-chevron.aberto {
+    transform: rotate(180deg);
+}

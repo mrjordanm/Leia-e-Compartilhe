@@ -1,0 +1,328 @@
+
+.catalogo-livros {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.catalogo-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 25px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 14px;
+    background: white;
+}
+
+.botao-doar-visitante {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-left: auto;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: var(--cor-primaria);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+    .botao-doar-visitante:hover {
+        background: var(--cor-secundaria);
+    }
+
+.catalogo-icone {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: #e8f1fa;
+    color: var(--cor-primaria);
+}
+
+.catalogo-subtitulo {
+    color: var(--cor-destaque);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+.catalogo-cabecalho h2 {
+    margin: 5px 0;
+    color: var(--cor-primaria);
+    font-size: 22px;
+}
+
+.catalogo-cabecalho p,
+.catalogo-titulo p {
+    margin: 0;
+    color: var(--cor-texto-secundario);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.catalogo-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.catalogo-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+    .catalogo-titulo h3 {
+        margin: 0 0 5px;
+        color: var(--cor-primaria);
+        font-size: 19px;
+    }
+
+.catalogo-contagem {
+    padding: 8px 13px;
+    border-radius: 20px;
+    background: #e8f1fa;
+    color: var(--cor-primaria);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.livros-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.livro-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid var(--cor-borda);
+    border-radius: 13px;
+    background: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .livro-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 22px rgba(36, 50, 71, 0.08);
+    }
+
+.livro-card-topo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px 20px 12px;
+}
+
+.livro-capa-icone {
+    width: 58px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #e4edf6, #f1f5f9);
+    color: var(--cor-primaria);
+}
+
+.livro-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 9px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+    .livro-status.disponivel {
+        background: #e8f3ed;
+        color: #32745d;
+    }
+
+    .livro-status.indisponivel {
+        background: #fceeee;
+        color: #a64b4b;
+    }
+
+.livro-card-conteudo {
+    flex: 1;
+    padding: 8px 20px 18px;
+}
+
+    .livro-card-conteudo h3 {
+        margin: 0 0 9px;
+        color: var(--cor-texto);
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+.livro-autor {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 0 0 15px;
+    color: var(--cor-texto-secundario);
+    font-size: 12px;
+}
+
+.livro-informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 12px;
+    border-top: 1px solid #edf0f4;
+    color: var(--cor-texto-secundario);
+    font-size: 11px;
+}
+
+    .livro-informacoes span {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+.livro-origem,
+.livro-observacoes {
+    margin: 12px 0 0;
+    color: var(--cor-texto-secundario);
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.livro-card-rodape {
+    padding: 0 20px 18px;
+}
+
+.botao-solicitar {
+    width: 100%;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 13px;
+    border: none;
+    border-radius: 8px;
+    background: var(--cor-primaria);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+    .botao-solicitar:hover:not(:disabled) {
+        background: var(--cor-secundaria);
+    }
+
+    .botao-solicitar:disabled {
+        cursor: not-allowed;
+        opacity: 0.65;
+    }
+
+.livro-indisponivel-aviso {
+    display: block;
+    color: var(--cor-texto-secundario);
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.livros-mensagem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+    .livros-mensagem.sucesso {
+        border: 1px solid #c6e4d3;
+        background: #edf8f1;
+        color: #286b49;
+    }
+
+    .livros-mensagem.erro {
+        border: 1px solid #f0cccc;
+        background: #fff0f0;
+        color: #a33c3c;
+    }
+
+.catalogo-vazio,
+.livros-carregando {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 55px 20px;
+    border: 1px dashed var(--cor-borda);
+    border-radius: 13px;
+    background: white;
+    color: var(--cor-texto-secundario);
+    text-align: center;
+}
+
+    .catalogo-vazio h3 {
+        margin: 0;
+        color: var(--cor-texto);
+        font-size: 16px;
+    }
+
+    .catalogo-vazio p,
+    .livros-carregando p {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+@media (max-width: 950px) {
+    .livros-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .livros-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogo-cabecalho {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 19px;
+    }
+
+        .catalogo-cabecalho h2 {
+            font-size: 19px;
+        }
+
+    .catalogo-icone {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+    }
+
+    .botao-doar-visitante {
+        width: 100%;
+        margin: 12px 0 0;
+    }
+}

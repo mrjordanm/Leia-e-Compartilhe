@@ -1,0 +1,38 @@
+
+# Arquivos e pastas do sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+
+# Configurações e segredos locais
+.env
+.env.*
+!.env.example
+appsettings.Development.json
+secrets.json
+
+# Backups e dados locais
+backup-contas.json
+
+# Arquivos gerados pelo desenvolvimento
+.vs/
+.idea/
+**/bin/
+**/obj/
+**/node_modules/
+**/dist/
+
+# Configurações pessoais do Visual Studio
+*.user
+*.suo
+
+# Certificados e chaves privadas
+*.pfx
+*.p12
+*.pem
+*.key

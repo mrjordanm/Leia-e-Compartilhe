@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Data/">
+    <File Path="AppDbContext.cs" />
+  </Folder>
+  <Folder Name="/Itens de Solução/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="LeiaCompartilhe.API.csproj" />
+</Solution>

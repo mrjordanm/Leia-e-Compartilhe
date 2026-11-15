@@ -1,0 +1,355 @@
+
+.pagina-emprestimos {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.emprestimos-cabecalho {
+	display: flex;
+	align-items: center;
+	gap: 17px;
+	padding: 25px;
+	border: 1px solid var(--cor-borda);
+	border-radius: 14px;
+	background: white;
+}
+
+.emprestimos-icone {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 58px;
+	height: 58px;
+	min-width: 58px;
+	border-radius: 14px;
+	background: #e8f1fa;
+	color: var(--cor-primaria);
+}
+
+.emprestimos-subtitulo {
+	color: var(--cor-destaque);
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 1.3px;
+}
+
+.emprestimos-cabecalho h2 {
+	margin: 5px 0;
+	color: var(--cor-primaria);
+	font-size: 22px;
+}
+
+.emprestimos-cabecalho p,
+.emprestimos-titulo p {
+	margin: 0;
+	color: var(--cor-texto-secundario);
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+.emprestimos-conteudo {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.emprestimos-titulo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 15px;
+}
+
+	.emprestimos-titulo h3 {
+		margin: 0 0 5px;
+		color: var(--cor-primaria);
+		font-size: 19px;
+	}
+
+.emprestimos-contagem {
+	padding: 8px 13px;
+	border-radius: 20px;
+	background: #e8f1fa;
+	color: var(--cor-primaria);
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.emprestimos-lista {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.emprestimo-card {
+	overflow: hidden;
+	border: 1px solid var(--cor-borda);
+	border-radius: 13px;
+	background: white;
+	transition: box-shadow 0.2s, transform 0.2s;
+}
+
+	.emprestimo-card:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 7px 20px rgba(36, 50, 71, 0.07);
+	}
+
+.emprestimo-card-cabecalho {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 20px 22px;
+}
+
+.emprestimo-livro-icone {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	min-width: 48px;
+	border-radius: 10px;
+	background: #e8f1fa;
+	color: var(--cor-primaria);
+}
+
+.emprestimo-livro-titulo {
+	flex: 1;
+	min-width: 0;
+}
+
+	.emprestimo-livro-titulo span {
+		color: var(--cor-texto-secundario);
+		font-size: 10px;
+		font-weight: 700;
+		letter-spacing: 0.8px;
+	}
+
+	.emprestimo-livro-titulo h3 {
+		margin: 5px 0 0;
+		color: var(--cor-texto);
+		font-size: 16px;
+		line-height: 1.4;
+	}
+
+.emprestimo-status {
+	padding: 7px 11px;
+	border-radius: 20px;
+	font-size: 11px;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+	.emprestimo-status.pendente {
+		background: #fff4dc;
+		color: #966a19;
+	}
+
+	.emprestimo-status.aprovado {
+		background: #e8f1fa;
+		color: #286b9e;
+	}
+
+	.emprestimo-status.reprovado {
+		background: #fceeee;
+		color: #a64b4b;
+	}
+
+	.emprestimo-status.ativo {
+		background: #e8f3ed;
+		color: #32745d;
+	}
+
+	.emprestimo-status.devolvido {
+		background: #edf0f4;
+		color: #536273;
+	}
+
+	.emprestimo-status.cancelado {
+		background: #f1ebf8;
+		color: #76559a;
+	}
+
+	.emprestimo-status.outro {
+		background: #edf0f4;
+		color: var(--cor-texto-secundario);
+	}
+
+.emprestimo-detalhes {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 22px;
+	padding: 17px 22px;
+	border-top: 1px solid #edf0f4;
+}
+
+.emprestimo-detalhe {
+	display: flex;
+	align-items: flex-start;
+	gap: 9px;
+	min-width: 145px;
+	color: var(--cor-secundaria);
+}
+
+	.emprestimo-detalhe div {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	}
+
+	.emprestimo-detalhe span {
+		color: var(--cor-texto-secundario);
+		font-size: 11px;
+	}
+
+	.emprestimo-detalhe strong {
+		color: var(--cor-texto);
+		font-size: 12px;
+		font-weight: 600;
+	}
+
+.emprestimo-acoes {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	padding: 15px 22px;
+	border-top: 1px solid #edf0f4;
+	background: #fafbfd;
+}
+
+.botao-emprestimo {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 7px;
+	min-height: 38px;
+	padding: 9px 14px;
+	border: none;
+	border-radius: 8px;
+	font-size: 12px;
+	font-weight: 600;
+	transition: opacity 0.2s, background 0.2s;
+}
+
+	.botao-emprestimo:disabled {
+		cursor: not-allowed;
+		opacity: 0.55;
+	}
+
+	.botao-emprestimo.aprovar {
+		background: #e8f3ed;
+		color: #32745d;
+	}
+
+		.botao-emprestimo.aprovar:hover:not(:disabled) {
+			background: #d8ecdf;
+		}
+
+	.botao-emprestimo.reprovar {
+		background: #fceeee;
+		color: #a64b4b;
+	}
+
+		.botao-emprestimo.reprovar:hover:not(:disabled) {
+			background: #f6dddd;
+		}
+
+	.botao-emprestimo.devolver {
+		background: #e8f1fa;
+		color: var(--cor-primaria);
+	}
+
+		.botao-emprestimo.devolver:hover:not(:disabled) {
+			background: #dceaf7;
+		}
+
+.emprestimos-mensagem {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 13px 15px;
+	border-radius: 8px;
+	font-size: 13px;
+}
+
+	.emprestimos-mensagem.sucesso {
+		border: 1px solid #c6e4d3;
+		background: #edf8f1;
+		color: #286b49;
+	}
+
+	.emprestimos-mensagem.erro {
+		border: 1px solid #f0cccc;
+		background: #fff0f0;
+		color: #a33c3c;
+	}
+
+.emprestimos-vazio,
+.emprestimos-carregando {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	padding: 55px 20px;
+	border: 1px dashed var(--cor-borda);
+	border-radius: 13px;
+	background: white;
+	color: var(--cor-texto-secundario);
+	text-align: center;
+}
+
+	.emprestimos-vazio h3 {
+		margin: 0;
+		color: var(--cor-texto);
+		font-size: 16px;
+	}
+
+	.emprestimos-vazio p,
+	.emprestimos-carregando p {
+		margin: 0;
+		font-size: 13px;
+		line-height: 1.6;
+	}
+
+@media (max-width: 650px) {
+	.emprestimos-cabecalho {
+		align-items: flex-start;
+		padding: 19px;
+	}
+
+		.emprestimos-cabecalho h2 {
+			font-size: 19px;
+		}
+
+	.emprestimos-icone {
+		width: 48px;
+		height: 48px;
+		min-width: 48px;
+	}
+
+	.emprestimo-card-cabecalho {
+		flex-wrap: wrap;
+		padding: 17px;
+	}
+
+	.emprestimo-status {
+		margin-left: 62px;
+	}
+
+	.emprestimo-detalhes,
+	.emprestimo-acoes {
+		padding: 15px 17px;
+	}
+
+	.emprestimo-detalhes {
+		gap: 17px;
+	}
+
+	.botao-emprestimo {
+		flex: 1;
+	}
+}
